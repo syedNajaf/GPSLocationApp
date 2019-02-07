@@ -242,38 +242,5 @@ public class MainActivity extends AppCompatActivity implements GoogleApiClient.C
         }
     }
 
-    //custom methods
-
-    /*private void showTheUserLocation()
-    {
-        int permissionCheck = ContextCompat.checkSelfPermission(MainActivity.this,
-                Manifest.permission.ACCESS_COARSE_LOCATION);
-
-        if (permissionCheck == PackageManager.PERMISSION_GRANTED)
-        {
-            FusedLocationProviderApi fusedLocationProviderApi = LocationServices.FusedLocationApi;
-            location = fusedLocationProviderApi.getLastLocation(googleApiClient);
-
-            if (location != null)
-            {
-                double latitude = location.getLatitude();
-                double longitude = location.getLongitude();
-
-                txtLocation.setText(latitude + ", " + longitude);
-            }
-            else
-            {
-                txtLocation.setText("The App is not able to access the user location now." + "try again later");
-            }
-        }
-
-        else
-        {
-            txtLocation.setText("This app is not allowed to access the location");
-            ActivityCompat.requestPermissions(MainActivity.this,new String[]
-                                              {Manifest.permission.ACCESS_COARSE_LOCATION},1);
-        }
-    }*/
-
 
 }
